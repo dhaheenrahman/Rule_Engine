@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rule Engine</h1>
+
+    <div>
+        <h2>Create Rule</h2>
+        <form id="create-rule-form">
+            <input type="text" id="ruleName" placeholder="Rule Name" required />
+            <textarea id="ruleString" placeholder="Rule String (operand and operators should be space seperated)&#10;Eg: (salary > 20000 AND department = 'sales')" required></textarea>
+            <button type="submit">Create Rule</button>
+        </form>
+        <pre id="astDisplay"></pre> 
+    </div>
+    
+    <div>
+        <h2>Combine Rules</h2>
+        <form id="combine-rules-form">
+            <input type="text" id="combinedRuleName" required placeholder="Combined Rule Name" required />
+            <label for="combineOperator">Combine Operator: </label>
+            <select id="combineOperator">
+                <option value="AND">AND</option>
+                <option value="OR">OR</option>
+            </select>
+            <textarea id="combineRulesInput" placeholder="Enter rule ID's (one per line)" required></textarea>
+            <button type="submit">Combine Rules</button>
+        </form>
+        <h3>Combined AST:</h3>
+        <pre id="combinedASTDisplay"></pre>
+    </div>
+
+    <div>
+        <h2>Evaluate Rule</h2>
+        <form id="evaluate-rule-form">
+            <textarea id="astInput" placeholder="AST JSON" required></textarea>
+            <textarea id="userData" placeholder="User Data JSON" required></textarea>
+            <button type="submit">Evaluate Rule</button>
+        </form>
+        <div id="evaluationResult"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
