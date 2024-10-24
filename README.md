@@ -62,7 +62,7 @@ Now the server will be running on:- <br>
 Your Rule_Engine is now ready to use. <br>
 Note:- while creating rules, Ensure spacing between operators and operands. Also 'AND' and 'OR' should be in Upper case. 
 
-### Working
+## Working
 #### 1. Create Rule:
 Rules can be created using a unique rule name and a rule string. While creating rules please ensure:-<br>
 - Operators and Operands are space seperated.<br>
