@@ -61,3 +61,39 @@ Now the server will be running on:- <br>
 ##### 6. Navigate to the 'frontend' folder and open 'index.html' in a browser. <br>
 Your Rule_Engine is now ready to use. <br>
 Note:- while creating rules, Ensure spacing between operators and operands. Also 'AND' and 'OR' should be in Upper case. 
+
+### Working
+#### 1. Create Rule:
+Rules can be created using a unique rule name and a rule string. While creating rules please ensure:-<br>
+- Operators and Operands are space seperated.<br>
+Eg: salary > 30000 ✅<br>
+Eg: salary>30000 ❌
+- AND and OR should be in uppercase.<br>
+  Eg: age > 30 AND experience > 3 ✅<br>
+ Eg: age > 30 and experience > 3 ❌
+- Use single quotes for non-numerical values. <br>
+Eg: department = 'sales' ✅<br>
+Eg: department = sales ❌
+![Create_Rule_Snapshot](https://github.com/user-attachments/assets/d0f343f0-108a-44b3-881a-cb4701fa8646)
+#### 2. Combine Rules:
+Multiple existing rules can be combined to a new rule with new rule name. While combining rules please ensure:-<br>
+- Enter the names of rules to be combined in a manner that one line contains only one rule.
+![Combine_Rules_Snapshot](https://github.com/user-attachments/assets/dbb9a7c2-2f84-4e32-b412-2fb2f2b9c7bc)
+#### 3. Evaluate Rule:
+Rules can be evaluated against user data. To evaluate a rule against a data:<br>
+- Copy the JSON string of rule from the database and paste it in the rule JSON section.
+- Input user data as JSON string.
+- Example user data: `{"age": 35, "department": "Sales", "salary": 60000, "experience": 3} `
+![Evaluate_Rule_Snapshot](https://github.com/user-attachments/assets/4bdc517c-d2e7-4a27-9862-d1d4a9fb4b92)
+
+ ## Technology Stack
+### Backend
+
+- Node.js
+- Express
+- MySQL
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
