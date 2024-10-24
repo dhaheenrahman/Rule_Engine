@@ -97,3 +97,8 @@ Rules can be evaluated against user data. To evaluate a rule against a data:<br>
 - CSS
 - JavaScript
 
+## Usage
+1. Launch the server and access the frontend in `index.html`.
+2. Create individual and combined rules.
+3. Evaluate the rules against user data.
+4. Find out whether the user is eligible or not.
