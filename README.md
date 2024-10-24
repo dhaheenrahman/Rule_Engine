@@ -52,7 +52,7 @@ Follow these steps to set up and run the project locally.
 	DB_USER=your_user (Eg: root)
 	DB_HOST=your_host (Eg: localhost)
 	DB_NAME=your_db_name (Eg: rule_engine)
-	DB_PASS=your_password
+	DB_PASSWORD=your_password
 	DB_PORT=your_port (Eg:3306)
 ##### 5. Run the file 'app.js':-
     node app.js
